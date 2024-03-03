@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+        }
+
+        body{
+            background-image: url(https://i.pinimg.com/originals/6c/a1/9a/6ca19ad6639a420afedf2b3e4b9c91fa.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 100vh;
+        }
+
+        #form{
+            color: blue;
+            padding: 10px;
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        h1{
+            color: yellow;
+            padding: 24px;
+            font-size: 45px;
+        }
+
+        button{
+    width: 200px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: green;
+    color: cyan;
+    cursor: pointer;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+            <form action="#" method="post" id="form">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+                <label for="gpa">Obtained GPA:</label>
+                <input type="number" id="gpa" name="gpa" step="0.01" requied><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="province">Province:</label>
+                <select id="province" name="province">
+                    <option value="">Select Province</option>
+                    <option value="i">Province 1 [Np-1]</option>
+                    <option value="ii">Province 2 [Np-2]</option>
+                    <option value="iii">Province 3 [Np-3]</option>
+                    <option value="iv">Province 4 [Np-4]</option>
+                    <option value="v">Province 5 [Np-5]</option>
+                    <option value="vi">Province 6 [Np-6]</option>
+                    <option value="vii">Province 7 [Np-7]</option>
+                    </select><br><br>
+
+                    <label for="school">Previously Attended School:</label>
+                <input type="text" id="school" name="school" required><br><br>
+
+                <label for="course">Desired Course:</label>
+                <select id="course" name="course">
+                    <option value="">Select Course</option>
+                    <option value="bsc">BSC</option>
+                    <option value="bscit">BSCIT</option>
+                    <option value="mbbs">MBBS</option>
+                    <option value="btech">BTECH</option>
+                </select><br><br>
+                <button type="submit">SUBMIT</button>
+            </form>
+</body>
